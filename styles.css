@@ -1,0 +1,147 @@
+=/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2874f0;
+    padding: 10px 20px;
+    color: white;
+}
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+header .search-bar {
+    flex: 1;
+    margin: 0 20px;
+    display: flex;
+}
+header .search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+header .search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #ff9f00;
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+header .user-actions button {
+    background-color: white;
+    color: #2874f0;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #ffe9a1;
+    padding: 10px;
+    text-align: center;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1200x300') no-repeat center center/cover;
+    height: 300px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.hero p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Product Section */
+.product-section {
+    padding: 20px;
+    background-color: #fff;
+}
+.product-section h2 {
+    margin-bottom: 15px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+.product-card:hover {
+    transform: scale(1.05);
+}
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+.product-card h3 {
+    margin: 10px 0;
+}
+.product-card p {
+    color: #666;
+    margin: 5px 0;
+}
+.product-card button {
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.product-card button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
